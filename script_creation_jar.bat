@@ -15,6 +15,7 @@ mkdir "%racine%\classes"
 for /r "%racine%\src" %%f in (*.java) do copy "%%f" "%racine%\out"
 
 
+
 :: ON COMPILE TOUS LES .java 
 javac -cp "%racine%\lib\*" -d "%racine%\classes" "%racine%\out\*.java"
 :: -cp veut dire classpath
